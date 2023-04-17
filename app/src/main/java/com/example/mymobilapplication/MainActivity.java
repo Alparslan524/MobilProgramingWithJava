@@ -19,6 +19,18 @@ public class MainActivity extends AppCompatActivity {
         Button btnShowName=findViewById(R.id.btnShowName);
         TextView tvShowName=findViewById(R.id.tvShowName);
         EditText editTextEnterName=findViewById(R.id.editTextEnterName);
+        Button btnShowNameButSecondPage=findViewById(R.id.btnShowNameButSecondPage);
+
+        btnShowNameButSecondPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Veri Gönderme
+                Intent i = new Intent(getApplicationContext(),secondPage.class);
+                String data = editTextEnterName.getText().toString();
+                i.putExtra("data",data);
+                startActivity(i);
+            }
+        });
 
         btnShowName.setOnClickListener(new View.OnClickListener() {
             @Override

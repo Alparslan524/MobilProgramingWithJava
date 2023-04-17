@@ -6,4 +6,5 @@
     <string name="second_page">Second Page</string>
     <string name="second_page_textview">Second Page</string>
     <string name="first_page">First Page</string>
+    <string name="show_name_but_second_page">Show Name But Second Page</string>
 </resources>
