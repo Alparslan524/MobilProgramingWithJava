@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         Button btnShowName=findViewById(R.id.btnShowName);
         TextView tvShowName=findViewById(R.id.tvShowName);
         EditText editTextEnterName=findViewById(R.id.editTextEnterName);
@@ -27,10 +28,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnSecondPage = findViewById(R.id.btnSecondPage);
+        btnSecondPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Bir sonraki sayfaya geçiş kodu
+                Intent i = new Intent(getApplicationContext(),secondPage.class);
+                startActivity(i);
+            }
+        });
 
     }
-
-
-
-
 }

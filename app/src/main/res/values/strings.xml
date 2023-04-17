@@ -3,4 +3,7 @@
     <string name="buttonShowName">Show Name</string>
     <string name="editText">Enter Name</string>
     <string name="buttonCalculator">Calculator</string>
+    <string name="second_page">Second Page</string>
+    <string name="second_page_textview">Second Page</string>
+    <string name="first_page">First Page</string>
 </resources>
